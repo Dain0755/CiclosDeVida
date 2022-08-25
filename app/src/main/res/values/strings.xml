@@ -1,0 +1,17 @@
+<resources>
+    <string name="hint_identificacion">Identificación</string>
+    <string name="app_name">ciclosDeVida</string>
+    <string name="hint_User">Usuario</string>
+    <string name="Hint_Password">Contrasena</string>
+    <string name="btn_Registro">Registrarse</string>
+    <string name="txtInfo">Alarma</string>
+    <string name="et_Nombres">Nombres</string>
+    <string name="et_Apellidos">Apellidos</string>
+    <string name="registro">Registro</string>
+    <string name="hint_celular">Celular</string>
+    <string name="et_correo">Correo</string>
+    <string name="et_confirmar">Confirmar Password</string>
+    <string name="iv_foto">Insertar foto</string>
+    <string name="tvBienvenida">Bienvenid@</string>
+    <string name="tvBirth">Fecha de nacimiento</string>
+</resources>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#91A9B6"
+    android:orientation="vertical"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvBienveida"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tvBienvenida"
+                android:layout_margin="10dp"
+                android:textAlignment="center"
+                android:textSize="29dp"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvIdentificacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="19dp"
+                android:textColorHint="@color/white"
+                >
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvNombres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="19dp"
+                android:textColorHint="@color/white"
+                >
+
+            </TextView>
+
+
+            <EditText
+                android:id="@+id/etApellidos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="@string/et_Apellidos"
+                android:textColorHint="@color/white">
+            </EditText>
+
+            <EditText
+                android:id="@+id/etCelular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_celular"
+                android:textColorHint="@color/white"
+                android:layout_margin="10dp"
+                android:inputType="phone"
+                >
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/etCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/et_correo"
+                android:textColorHint="@color/white">
+
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/tvBirth"
+                android:textSize="19dp"
+                android:textColor="@color/white"
+                >
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#91A9B6"
+                android:layout_margin="10dp">
+                <Button
+                    android:id="@+id/btnInsertar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/iv_foto"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="#392E2E">
+
+                </Button>
+
+                <Space
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    >
+                </Space>
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/white"
+                    >
+
+                </ImageView>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+
+</LinearLayout>

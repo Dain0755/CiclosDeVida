@@ -1,0 +1,7 @@
+onCreate()= abrir
+onStart()= Iniciar
+onResume()= Retornar
+onPause()= 
+onStop()
+onRestart()
+onDestroy()
