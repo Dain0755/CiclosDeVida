@@ -11,15 +11,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_margin="30dp"
-        android:textAlignment="center"
-        android:textSize="30dp"
-        android:textColor="#814545"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
         android:text="@string/registro"
-
-        >
-
-    </TextView>
+        android:textAlignment="center"
+        android:textColor="#814545"
+        android:textSize="30dp"></TextView>
 
 
     <EditText
@@ -29,30 +28,44 @@
         android:layout_below="@id/tvLogLogin"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
         android:hint="@string/hint_identificacion"
-        android:textColorHint="@color/white"
         android:inputType="number"
-        >
+        android:textColorHint="@color/white"></EditText>
 
-    </EditText>
     <EditText
         android:id="@+id/etNombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/etIdentificacion"
-        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
         android:hint="@string/et_Nombres"
         android:textColorHint="@color/white">
+
     </EditText>
 
+    <EditText
+        android:id="@+id/etApellidos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etNombre"
+        android:layout_margin="10dp"
+        android:hint="@string/et_Apellidos"
+        android:textColorHint="@color/white">
+    </EditText>
 
 
     <EditText
         android:id="@+id/etLoginUser"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/etNombre"
+        android:layout_below="@id/etApellidos"
         android:layout_margin="10dp"
         android:drawableStart="@drawable/ic_baseline_person_24"
         android:hint="@string/hint_User"
@@ -61,32 +74,26 @@
     </EditText>
 
     <EditText
-        android:id="@+id/etLoginPassword"
+        android:id="@+id/etPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/etLoginUser"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
+        android:layout_margin="10dp"
         android:drawableStart="@drawable/vector_lock_24"
-        android:hint="@string/Hint_Password"
+        android:hint="@string/hint_Password"
         android:inputType="textPassword"
         android:textColorHint="@color/white">
 
     </EditText>
 
     <EditText
-        android:id="@+id/etConfirmarPassword"
+        android:id="@+id/etConfirmPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/etLoginPassword"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
+        android:layout_below="@id/etPassword"
+        android:layout_margin="10dp"
         android:drawableStart="@drawable/vector_lock_24"
-        android:hint="@string/et_confirmar"
+        android:hint="@string/hint_confirmarPassword"
         android:inputType="textPassword"
         android:textColorHint="@color/white">
 
@@ -96,12 +103,14 @@
         android:id="@+id/btnSend"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_below="@id/etConfirmarPassword"
+        android:layout_below="@id/etConfirmPassword"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
         android:backgroundTint="#B52150"
         android:text="@string/btn_Registro"
-        android:textColor="@color/black"
-        android:layout_margin="10dp"
-        >
+        android:textColor="@color/black">
 
     </Button>
 

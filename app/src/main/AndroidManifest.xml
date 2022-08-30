@@ -4,8 +4,8 @@
     package="com.example.ciclosdevida">
     <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
     <uses-permission android:name="com.android.camera.permission.IMAGE_CAPTURE"/>
-    <uses-feature android:name="android.hardware.camera"
-        android:required="false" />
+    <uses-permission android:name="android.permission.permission.SELECT_FILE"/>
+    <uses-feature android:name="android.hardware.camera" android:required="true" />
 
 
     <application
@@ -20,7 +20,7 @@
         tools:targetApi="31">
         <activity
             android:name=".pantalla2"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

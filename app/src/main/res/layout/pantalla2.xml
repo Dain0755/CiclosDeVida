@@ -8,23 +8,26 @@
     android:background="#91A9B6"
     android:orientation="vertical"
     >
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <TextView
                 android:id="@+id/tvBienveida"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/tvBienvenida"
+                android:layout_height="80dp"
                 android:layout_margin="10dp"
-                android:textAlignment="center"
-                android:textSize="29dp"
-                >
-            </TextView>
+                android:background="#B52150"
+                android:gravity="center"
+                android:text="@string/tvBienvenida"
+                android:textColor="@color/white"
+                android:textSize="29dp"></TextView>
 
             <TextView
                 android:id="@+id/tvIdentificacion"
@@ -33,9 +36,7 @@
                 android:layout_margin="10dp"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="19dp"
-                android:textColorHint="@color/white"
-                >
+                android:textSize="19dp">
 
             </TextView>
 
@@ -46,31 +47,29 @@
                 android:layout_margin="10dp"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="19dp"
-                android:textColorHint="@color/white"
-                >
+                android:textSize="19dp">
 
             </TextView>
 
-
-            <EditText
-                android:id="@+id/etApellidos"
+            <TextView
+                android:id="@+id/tvApellidos"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:hint="@string/et_Apellidos"
-                android:textColorHint="@color/white">
-            </EditText>
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="19dp"></TextView>
+
 
             <EditText
                 android:id="@+id/etCelular"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/hint_celular"
-                android:textColorHint="@color/white"
                 android:layout_margin="10dp"
+                android:drawableStart="@drawable/ic_baseline_phone_android_24"
+                android:hint="@string/hint_celular"
                 android:inputType="phone"
-                >
+                android:textColorHint="@color/white">
 
             </EditText>
 
@@ -82,63 +81,175 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="10dp"
+                android:drawableStart="@drawable/ic_baseline_email_24"
                 android:hint="@string/et_correo"
                 android:textColorHint="@color/white">
 
             </EditText>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:text="@string/tvBirth"
-                android:textSize="19dp"
-                android:textColor="@color/white"
-                >
-            </TextView>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:background="#91A9B6"
-                android:layout_margin="10dp">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
                 <Button
-                    android:id="@+id/btnInsertar"
+                    android:id="@+id/btnTomar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="65dp"
+                    android:layout_marginRight="36dp"
+                    android:backgroundTint="#392E2E"
                     android:text="@string/iv_foto"
                     android:textColor="@color/white"
-                    android:textSize="15dp"
-                    android:layout_margin="10dp"
-                    android:backgroundTint="#392E2E">
 
-                </Button>
-
-                <Space
-                    android:layout_width="50dp"
-                    android:layout_height="match_parent"
-                    >
-                </Space>
+                    android:textSize="15dp"></Button>
 
                 <ImageView
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:layout_margin="10dp"
-                    android:background="@color/white"
-                    >
+                    android:id="@+id/ivImagen"
+                    android:layout_width="143dp"
+                    android:layout_height="153dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="36dp"
+                    android:layout_marginTop="36dp"
+                    android:layout_marginEnd="36dp"
+                    android:layout_marginBottom="36dp"
+                    android:background="@color/white">
 
                 </ImageView>
-            </LinearLayout>
+            </RelativeLayout>
 
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:id="@+id/tituloHora"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/tv_alarma"
+                    android:textAlignment="center"
+                    android:textColor="#814545"
+                    android:textSize="29dp">
+
+                </TextView>
+
+                <LinearLayout
+                    android:id="@+id/lnReloj"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tituloHora"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/etHora"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:hint="@string/et_hora"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColorHint="@color/white"
+                        android:textSize="19dp">
+
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/etMinuto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:hint="@string/et_minuto"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColorHint="@color/white"
+                        android:textSize="19dp">
+
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/etDias"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:hint="@string/et_dias"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColorHint="@color/white"
+                        android:textSize="19dp">
+                    </EditText>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lnReloj"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/etMensaje"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_nombre_alarma"
+                        android:textColorHint="@color/white"
+                        android:textSize="19dp">
+
+                    </EditText>
+
+                    <Button
+                        android:id="@+id/btnHora"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:backgroundTint="#B52150"
+                        android:text="@string/btn_programar">
+
+                    </Button>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/tv_guardar_celular"
+                android:textAlignment="center"
+                android:textColor="#814545"
+                android:textSize="29dp"></TextView>
+
+            <EditText
+                android:id="@+id/NomContacto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="@string/et_nombre_contacto"
+                android:textColorHint="@color/white"></EditText>
+
+            <EditText
+                android:id="@+id/TelContacto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="@string/et_telefono_contacto"
+                android:textColorHint="@color/white"></EditText>
+
+            <Button
+                android:id="@+id/btnContacto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:backgroundTint="#B52150"
+                android:text="Guardar Contacto"></Button>
         </LinearLayout>
     </ScrollView>
-
-
-
-
-
-
-
-
+    .
 </LinearLayout>
